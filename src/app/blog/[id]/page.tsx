@@ -16,7 +16,7 @@ type dataType = {
 
 export default async function Blog({ params }: any) {
 
-    const req = await axios.get('http://devscribe-ten.vercel.app/api/v1/blogId/' + params.id)
+    const req = await axios.get('https://devscribe-ten.vercel.app/api/v1/blogId/' + params.id)
     const data: dataType = req.data
 
     const formatedDate = new Date(data.createdAt).toLocaleDateString('en-GB', {

@@ -18,7 +18,7 @@ export function Blog(props: blogData) {
         year: "numeric"
     })
     return (
-        <Link href={'http://devscribe-ten.vercel.app/blog/'+props.blogId}>
+        <Link href={'https://devscribe-ten.vercel.app/blog/'+props.blogId}>
             <div className="border-b p-5 border-slate-300">
                 <div className="flex items-center text-slate-800 font-semibold text-lg gap-2">
                     <Avator image={props.image} name={props.author}></Avator>
