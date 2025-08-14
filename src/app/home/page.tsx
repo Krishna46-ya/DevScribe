@@ -65,7 +65,7 @@ export default async function Home({ searchParams }: any) {
 function Page({ to, placeholder, current }: { to: number, placeholder: string, current: boolean }) {
 
     return (<>
-        <Link className={`text-lg font-semibold ${current ? "bg-slate-300 hover:bg-slate-500" : "bg-slate-100 hover:bg-slate-300"} border border-slate-500  transition-colors duration-100 ease-in-out  px-2 py-1 shadow  rounded-sm`} href={'/home?page=' + to}>
+        <Link className={`text-lg font-semibold ${current ? "bg-slate-300 hover:bg-slate-500" : "bg-slate-100 hover:bg-slate-300"} border border-slate-500  transition-colors duration-100 ease-in-out  px-2 py-1 shadow  rounded-sm`} href={'https://devscribe-ten.vercel.app/home?page=' + to}>
             <div className="">
                 {placeholder}
             </div>
