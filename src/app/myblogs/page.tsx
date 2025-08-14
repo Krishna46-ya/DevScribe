@@ -29,7 +29,7 @@ export default function MyBlogs() {
         }
         else if (session.status === "authenticated") {
             const call = async () => {
-                const res = await axios.get('http://localhost:3000/api/v1/myblogs')
+                const res = await axios.get('http://devscribe-ten.vercel.app/api/v1/myblogs')
                 setData(res.data)
                 setLoading(false)
             }

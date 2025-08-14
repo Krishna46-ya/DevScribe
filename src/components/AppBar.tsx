@@ -41,7 +41,7 @@ export async function AppBar() {
                             <UserAvator session={session} name={session.user.name} image={session.user.image}></UserAvator>
                         </div>
                         <div className="flex items-center flex-col justify-center text-slate-900">
-                           <FancySidePanel name={session.user.name}></FancySidePanel>
+                            <FancySidePanel name={session.user.name}></FancySidePanel>
                         </div>
                     </div>
                 </div >

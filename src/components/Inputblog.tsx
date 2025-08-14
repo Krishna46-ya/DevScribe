@@ -27,7 +27,7 @@ export function ExportBlog() {
         if (reference.current) return;
         reference.current = true
         try {
-            const blog = await axios.post('http://localhost:3000/api/v1/createblog', {
+            const blog = await axios.post('http://devscribe-ten.vercel.app/api/v1/createblog', {
                 title: title.trim(),
                 content: content.trim()
             })

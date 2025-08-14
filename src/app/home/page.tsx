@@ -13,7 +13,7 @@ export default async function Home({ searchParams }: any) {
 
     const page = await searchParams.page || "1"
 
-    const res = await axios.get('http://localhost:3000/api/v1/bulk?page=' + page)
+    const res = await axios.get('http://devscribe-ten.vercel.app/api/v1/bulk?page=' + page)
     const blog: info = res.data
 
     return (<>

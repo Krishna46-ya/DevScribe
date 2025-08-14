@@ -13,7 +13,7 @@ export default async function editBlog({ params }: any) {
         redirect('/signup')
     }
 
-    const res = await axios.get('http://localhost:3000/api/v1/blogId/' + params.id)
+    const res = await axios.get('http://devscribe-ten.vercel.app/api/v1/blogId/' + params.id)
     const data = res.data
     return (
         <div>
