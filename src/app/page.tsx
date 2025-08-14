@@ -50,8 +50,7 @@ export default function Home() {
                             <img className="fixed bottom-0 right-0 max-w-3/10" src="Ryo.png"></img>
                         </div>
                     </div>
-                </div>
-
+                </div> 
             </div>
         </>
     );

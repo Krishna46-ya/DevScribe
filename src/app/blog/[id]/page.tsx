@@ -15,6 +15,7 @@ type dataType = {
 }
 
 export default async function Blog({ params }: any) {
+
     const req = await axios.get('http://localhost:3000/api/v1/blogId/' + params.id)
     const data: dataType = req.data
 

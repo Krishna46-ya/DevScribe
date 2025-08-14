@@ -1,3 +1,4 @@
+import { AppBar } from "@/components/AppBar"
 import { Blog, blogData } from "@/components/Blog"
 import axios from "axios"
 import Link from "next/link"
@@ -16,6 +17,7 @@ export default async function Home({ searchParams }: any) {
     const blog: info = res.data
 
     return (<>
+        <AppBar></AppBar>
         <div className="grid md:grid-cols-4 lg:grid-cols-6 pt-[65px]">
             <div className="hidden lg:block col-span-1 min-h-screen">
                 <div className="grid place-items-center bg-gradient-to-b from-[#EEEEEE] via-[#EEEEEE] to-white  min-h-full border-r border-slate-400">

@@ -6,4 +6,4 @@ export default function Provider({children}: any){
     return <SessionProvider>
         {children}
     </SessionProvider>
-}
+} 

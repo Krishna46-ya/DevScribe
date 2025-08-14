@@ -1,5 +1,6 @@
 'use client'
 import { MyblogsPage } from "@/components/MyblogsPage"
+import { HomeBodySkelaton } from "@/skeletons/HomeBodySkelaton"
 import axios from "axios"
 import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation"
@@ -65,6 +66,9 @@ export default function MyBlogs() {
                     </div>
                 </div>
             </div>
+        </div>}
+        {loading && <div className="pt-[65px]">
+            <HomeBodySkelaton></HomeBodySkelaton>
         </div>}
     </>)
 }
