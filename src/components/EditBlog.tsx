@@ -1,7 +1,7 @@
 'use client'
 
 import { editBlog } from "@/actions/editBlog"
-import { redirect, useRouter } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { useRef, useState } from "react"
 
 export function EditBlog({ title, content, blogId }: {
@@ -23,7 +23,7 @@ export function EditBlog({ title, content, blogId }: {
         if (newTitle.trim() === title && newContent.trim() === content) {
             if (reference.current) return
             reference.current = true
-            redirect('/blog/' + blogId)
+            router.push('/blog/' + blogId)
         }
         try {
             if (reference.current) return;
@@ -31,7 +31,7 @@ export function EditBlog({ title, content, blogId }: {
             const res = await editBlog({ title: newTitle.trim(), content: newContent.trim(), blogId: blogId })
             console.log(res)
             if (res.status === 200) {
-                redirect('/blog/' + blogId)
+                router.push('/blog/' + blogId)
             } else if (res.status === 400) {
                 setErr(true)
                 router.push('/home')
