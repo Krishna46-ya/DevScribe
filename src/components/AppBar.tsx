@@ -25,11 +25,11 @@ export async function AppBar() {
     return (
         <>
             <div className="top-0 left-0 fixed bg-white w-full z-30">
-                <div className="flex justify-between p-4 px-12 border-b shadow border-slate-950">
+                <div className="flex justify-between p-4 md:px-12 border-b shadow border-slate-950">
                     <Link href={'/home'} className="text-2xl hover:text-slate-950 text-slate-900 font-serif">
                         DevScribe
                     </Link>
-                    <div className="flex space-x-7">
+                    <div className="flex space-x-3 md:space-x-7">
                         <div className="flex flex-col justify-center items-center">
                             <Link href={'/create'}><div className="hover:text-slate-950 flex font-semibold text-slate-900" >
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 ">
