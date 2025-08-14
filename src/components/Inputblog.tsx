@@ -34,6 +34,7 @@ export function ExportBlog() {
             const blogData: blogDefault = blog.data
             router.push(`/blog/${blogData.blog.id}`)
         } catch (err) {
+            console.log(err)
             reference.current = false
         }
     }
