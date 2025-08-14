@@ -13,10 +13,8 @@ export default async function Home({ searchParams }: any) {
 
     const page = await searchParams.page || "1"
 
-    const res = await fetch(`https://devscribe-ten.vercel.app/api/v1/bulk?page=${page}`, {
-        cache: "no-store"
-    });
-    const blog: info = await res.json();
+    const res = await axios.get('https://devscribe-ten.vercel.app/api/v1/bulk?page=' + page) 
+    const blog: info = res.data
 
     return (<>
         <AppBar></AppBar>
