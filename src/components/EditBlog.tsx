@@ -9,6 +9,7 @@ export function EditBlog({ title, content, blogId }: {
     content: string,
     blogId: string,
 }) {
+    
     const [newTitle, setNewTitle] = useState(title)
     const [newContent, setNewContent] = useState(content)
     const [err, setErr] = useState(false)
